@@ -1,0 +1,100 @@
+.my-orders-page {
+  max-width: 900px;
+  margin: 35px auto;
+  padding: 20px;
+}
+
+.my-orders-page > h2 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 25px;
+}
+
+.no-orders {
+  padding: 35px 20px;
+  text-align: center;
+  background: white;
+  border-radius: 12px;
+}
+
+.no-orders a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 11px 18px;
+  background: #2563eb;
+  color: white;
+  border-radius: 7px;
+}
+
+.orders-list {
+  display: grid;
+  gap: 20px;
+}
+
+.order-card {
+  padding: 22px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 12px;
+}
+
+.order-header h3 {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.order-status {
+  padding: 6px 10px;
+  background: #dcfce7;
+  color: #166534;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.order-product {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.order-product span:last-child {
+  text-align: right;
+}
+
+.order-discount {
+  color: #15803d;
+  font-weight: bold;
+}
+
+.order-total {
+  color: #1d4ed8;
+  text-align: right;
+}
+
+@media (max-width: 480px) {
+  .my-orders-page {
+    padding: 12px;
+  }
+
+  .order-card {
+    padding: 15px;
+  }
+
+  .order-product {
+    font-size: 14px;
+  }
+}
